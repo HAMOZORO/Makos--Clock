@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1b1c"/>
+      <stop offset="100%" stop-color="#111213"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d9cdb"/>
+      <stop offset="100%" stop-color="#56ccf2"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+  <!-- Clock face -->
+  <circle cx="256" cy="256" r="186" fill="none" stroke="url(#accent)" stroke-width="14"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <!-- Hour markers -->
+  <g stroke="#fff" stroke-width="6" stroke-linecap="round">
+    <line x1="256" y1="82" x2="256" y2="104"/><!-- 12 -->
+    <line x1="430" y1="256" x2="408" y2="256"/><!-- 3 -->
+    <line x1="256" y1="430" x2="256" y2="408"/><!-- 6 -->
+    <line x1="82" y1="256" x2="104" y2="256"/><!-- 9 -->
+  </g>
+  <!-- Minor markers -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="3.5" stroke-linecap="round">
+    <line x1="343" y1="107" x2="334" y2="123"/><!-- 1 -->
+    <line x1="405" y1="169" x2="389" y2="178"/><!-- 2 -->
+    <line x1="405" y1="343" x2="389" y2="334"/><!-- 4 -->
+    <line x1="343" y1="405" x2="334" y2="389"/><!-- 5 -->
+    <line x1="169" y1="405" x2="178" y2="389"/><!-- 7 -->
+    <line x1="107" y1="343" x2="123" y2="334"/><!-- 8 -->
+    <line x1="107" y1="169" x2="123" y2="178"/><!-- 10 -->
+    <line x1="169" y1="107" x2="178" y2="123"/><!-- 11 -->
+  </g>
+  <!-- Hour hand -->
+  <line x1="256" y1="256" x2="197" y2="166" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="256" y1="256" x2="315" y2="166" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <!-- Second hand -->
+  <line x1="256" y1="256" x2="256" y2="122" stroke="#2d9cdb" stroke-width="4" stroke-linecap="round"/>
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="12" fill="#2d9cdb"/>
+  <circle cx="256" cy="256" r="6" fill="#fff"/>
+</svg>
